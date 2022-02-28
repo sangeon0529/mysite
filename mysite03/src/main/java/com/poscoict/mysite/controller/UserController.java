@@ -52,7 +52,7 @@ public class UserController {
 		return "user/joinsuccess";
 	}	
 	
-	@RequestMapping(value="/login")
+//	@RequestMapping(value="/login")
 	public String login() {
 		return "user/login";
 	}
