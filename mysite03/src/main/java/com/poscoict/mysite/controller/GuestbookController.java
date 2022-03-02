@@ -19,6 +19,11 @@ public class GuestbookController {
 	@Autowired
 	GuestbookService guestbookService;
 	
+	@RequestMapping("/spa")
+	public String spa() {
+		return "guestbook/index-spa";
+	}
+	
 	@RequestMapping("")
 	public String index(Model model) {
 		List<GuestbookVo> list = guestbookService.getMessageList();
